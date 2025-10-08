@@ -22,7 +22,7 @@ pipeline {
         dir('Test_MiniProject') {
           sh 'docker --version'
           // build and tag locally
-          sh "docker build -t ${DOCKERHUB_REPO}/${DOCKER_IMAGE_NAME}:latest ."
+          sh "docker buildx -t ${DOCKERHUB_REPO}/${DOCKER_IMAGE_NAME}:latest ."
         }
       }
     }
