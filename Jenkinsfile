@@ -23,7 +23,7 @@ pipeline {
         // build and tag locally
         // use `buildx build --load` so the built image is loaded into the local docker
         // image store (so the separate `docker push` step can find and push it).
-        sh "docker buildx build --load -t ${DOCKERHUB_REPO}/${DOCKER_IMAGE_NAME}:latest ."
+        sh "docker build -t ${DOCKERHUB_REPO}/${DOCKER_IMAGE_NAME}:latest ."
       }
     }
 
