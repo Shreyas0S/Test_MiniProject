@@ -7,7 +7,7 @@ pipeline {
     DOCKERHUB_REPO    = 'shreyas0s'                 // DockerHub namespace
     DOCKERHUB_CRED    = 'DockerHubCred'         // credentialsId (username/password)
     GIT_REPO_URL      = 'https://github.com/Shreyas0S/Test_MiniProject.git'
-    GIT_BRANCH        = 'master'
+    GIT_BRANCH        = 'main'
   }
 
   stages {
