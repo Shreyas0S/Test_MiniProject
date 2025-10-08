@@ -1,6 +1,6 @@
 #!/bin/bash
 # A simple calculator shell program
-
+echo "Simple Calculator"
 echo "1. Addition"
 echo "2. Subtraction"
 echo "3. Multiplication"
